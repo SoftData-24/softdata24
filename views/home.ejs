@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="my portfolio website to showcase the work I have done so far, the services I provide and all my professionals life.">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="<%= base_link %>/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="<%= base_link %>/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="<%= base_link %>/css/style.css" />
+  </head>
+
+  <body>
+    <%-include('partials/header') %>
+
+    <!-- ======================================== 
+        Our Main Hero Section Start  
+    ========================================  -->
+    <%- include('partials/about_us') %>
+
+    <!-- ======================================== 
+        Bio Data Section Start  
+    ========================================  -->
+    <%- include('partials/biodata') %>
+
+    <!-- ======================================== 
+        Portfolio works Section Start  
+    ========================================  -->
+    <%- include('partials/portfolio') %>
+
+    <!-- ======================================== 
+        Work completed counter section Start  
+    ========================================  -->
+    <%- include('partials/work_complete_counter') %>
+
+    <!-- ======================================== 
+        Our Service Section Start  
+    ========================================  -->
+    <%-include('partials/service') %>
+
+    <!-- ======================================== 
+        Our Testimonial Section Start  
+    ========================================  -->
+      <%- include('partials/testimonial') %>
+
+    <!-- ======================================== 
+        Freelancing Section   
+    ========================================  -->
+    <%-include('partials/freelancing') %>
+
+    <!-- ======================================== 
+        Our Cotnact Us Section   
+    ========================================  -->
+    <%-include('partials/contact') %>
+
+    <!-- ======================================== 
+        Our footer Section   
+    ========================================  -->
+    <%- include('partials/footer') %>
+
+
+
+    <!-- ======================================== 
+        Our JavaScript Section   
+    ========================================  -->
+    <script type="module" src="<%= base_link %>/js/ionicons.esm.js"></script>
+    <script nomodule src="<%= base_link %>/js/ionicons.js"></script>
+    <script src="<%= base_link %>/js/swiper-bundle.min.js"></script>
+    <script src="<%= base_link %>/index.js"></script>
+  </body>
+</html>
