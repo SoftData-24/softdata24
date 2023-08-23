@@ -13,7 +13,7 @@ app.use('/static/',express.static('public'));
 // Home page
 app.get('/',(req,res)=>{
     const host = req.get('host');
-    res.render('home',{title:'SoftData24',base_link:'http://'+host+'/static/'});
+    res.render('home',{title:'SoftData24',base_link:'http://'+host+'/static'});
 });
 
 app.listen(port,(req,res)=>{
